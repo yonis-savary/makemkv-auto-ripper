@@ -1,0 +1,9 @@
+<?php
+
+use YonisSavary\MakemkvAutoRipper\AutoRipper;
+use YonisSavary\MakemkvAutoRipper\AutoRipperFactory;
+
+require_once "./vendor/autoload.php";
+
+$ripper = AutoRipperFactory::fromArgs($argv);
+$ripper->launch();
