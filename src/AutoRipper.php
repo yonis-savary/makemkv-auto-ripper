@@ -145,7 +145,7 @@ class AutoRipper
         if (!strlen($discNumber))
             die("Cannot detect disc number \n");
 
-            $logFile = getcwd() . "/logs/" . date("Y-m-d H-i-s") . ".txt";
+        $logFile = getcwd() . "/logs/" . date("Y-m-d H-i-s") . ".txt";
 
         $this->log("Ripping disc:$discNumber");
         $this->log("$dvdName in $outPath");
